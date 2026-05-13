@@ -122,7 +122,7 @@ export default function Reviews() {
 
         <div className="reviews-cta">
           <a
-            href="https://www.google.com/maps/place/Vigabe+Estilistas/@36.8484834,-2.4571615,17z"
+            href="https://www.google.com/maps/place/Vigabe+Estilistas/@36.8484618,-2.4571068,19z/data=!4m8!3m7!1s0xd7a9f1ad7073249:0xd7c725702eeac152!8m2!3d36.8484834!4d-2.4571615!9m1!1b1!16s%2Fg%2F11h4fhys65?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
