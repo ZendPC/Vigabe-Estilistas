@@ -1,5 +1,6 @@
 import React from 'react'
-import { Star, Award, MapPin, Phone, CheckCircle } from 'lucide-react'
+import { Star, Award, MapPin, CheckCircle } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import './About.css'
 
 export default function About() {
@@ -58,9 +59,9 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <a href="tel:663738845" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '2rem' }}>
-              <Phone size={15} />
-              Llámanos ahora
+            <a href="https://wa.link/wl9u2s" className="btn-primary" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '2rem' }} aria-label="Reservar cita por WhatsApp">
+              <FaWhatsapp size={17} aria-hidden="true" />
+              Reservar cita
             </a>
           </div>
         </div>

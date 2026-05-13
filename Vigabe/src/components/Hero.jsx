@@ -1,5 +1,6 @@
 import React from 'react'
-import { Phone, ChevronDown, Scissors } from 'lucide-react'
+import { ChevronDown, Scissors } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import './Hero.css'
 
 export default function Hero() {
@@ -21,8 +22,8 @@ export default function Hero() {
         </h1>
         <p className="hero-tagline">Tu imagen, nuestra pasión. Almería.</p>
         <div className="hero-actions">
-          <a href="tel:663738845" className="btn-primary">
-            <Phone size={15} style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} />
+          <a href="https://wa.link/wl9u2s" className="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Reservar cita por WhatsApp">
+            <FaWhatsapp size={17} style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} aria-hidden="true" />
             Reservar cita
           </a>
           <button className="btn-outline-white" onClick={() => scrollTo('#servicios')}>

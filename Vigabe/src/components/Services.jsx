@@ -1,6 +1,7 @@
 import React from 'react'
-import { Scissors, Palette, Sparkles, Zap, Hand, Crown, Phone } from 'lucide-react'
+import { Scissors, Palette, Sparkles, Zap, Hand, Crown } from 'lucide-react'
 import { GiRazor } from 'react-icons/gi'
+import { FaWhatsapp } from 'react-icons/fa'
 import './Services.css'
 
 const services = [
@@ -67,9 +68,9 @@ export default function Services() {
           ))}
         </div>
         <div className="services-cta">
-          <a href="tel:663738845" className="btn-primary">
-            <Phone size={15} style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} />
-            Pedir cita — 663 73 88 45
+          <a href="https://wa.link/wl9u2s" className="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Pedir cita por WhatsApp">
+            <FaWhatsapp size={17} style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} aria-hidden="true" />
+            Pedir cita por WhatsApp
           </a>
         </div>
       </div>

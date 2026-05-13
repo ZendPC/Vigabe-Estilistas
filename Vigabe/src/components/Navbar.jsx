@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Phone, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import './Navbar.css'
 
 const links = [
@@ -74,8 +75,8 @@ export default function Navbar() {
           </li>
         ))}
         <li role="none">
-          <a href="tel:663738845" className="navbar-cta" aria-label="Llamar para reservar cita: 663 73 88 45">
-            <Phone size={13} style={{ marginRight: '0.4rem', verticalAlign: 'middle' }} aria-hidden="true" />
+          <a href="https://wa.link/wl9u2s" className="navbar-cta" target="_blank" rel="noopener noreferrer" aria-label="Reservar cita por WhatsApp">
+            <FaWhatsapp size={15} style={{ marginRight: '0.4rem', verticalAlign: 'middle' }} aria-hidden="true" />
             Reservar cita
           </a>
         </li>
