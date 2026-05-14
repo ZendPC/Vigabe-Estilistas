@@ -81,7 +81,9 @@
   background: var(--off-white);
   border: 1px solid var(--silver);
   padding: 2rem;
-  min-height: 200px;
+  min-height: 280px; /* Aumentado considerablemente para absorber el texto de la reseña más larga sin cambiar la altura del carrusel */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Animaciones */
@@ -181,7 +183,7 @@
 
 @media (max-width: 600px) {
   .carousel-btn { width: 34px; height: 34px; }
-  .review-card { padding: 1.5rem; }
+  .review-card { padding: 1.5rem; min-height: 320px; }
   .reviews-score { padding: 1.25rem; gap: 1rem; }
   .score-big { font-size: 3.5rem; }
   .reviews-cta .btn-secondary { width: 100%; text-align: center; }

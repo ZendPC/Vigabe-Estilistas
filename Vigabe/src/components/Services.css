@@ -22,9 +22,26 @@
   box-shadow: 0 8px 30px rgba(0,0,0,0.07);
 }
 
-.service-icon {
-  color: var(--blue-icon);  /* azul-gris elegante */
-  margin-bottom: 1rem;
+.service-icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  background-color: var(--off-white);
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.5s ease-out;
+}
+
+.service-card:hover .service-icon-box {
+  background-color: var(--black);
+  color: var(--gold);
+  border-color: var(--black);
+  transform: rotate(3deg);
 }
 
 .service-title {
