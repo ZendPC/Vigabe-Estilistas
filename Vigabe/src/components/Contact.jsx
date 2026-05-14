@@ -118,7 +118,7 @@ export default function Contact() {
                         aria-current={isToday ? 'true' : undefined}
                       >
                         <td>
-                          {h.day}
+                          {h.day} {isToday && <span style={{ fontSize: '0.85em', opacity: 0.8 }}>(HOY)</span>}
                           {isToday && (
                             <span
                               className={`today-badge${closedNow ? ' closed' : ''}`}
