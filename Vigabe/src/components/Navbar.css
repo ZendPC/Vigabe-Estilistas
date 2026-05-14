@@ -140,10 +140,38 @@
   color: var(--black);
 }
 
+/* Overlay for mobile menu */
+.menu-overlay {
+  display: none;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   .hamburger {
     display: flex;
+  }
+
+  .navbar-logo {
+    z-index: 998;
+  }
+
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
 
   .navbar-links {
@@ -161,6 +189,12 @@
     padding: 5rem 2.5rem 2.5rem;
     box-shadow: -4px 0 30px rgba(0,0,0,0.4);
     overflow-y: auto;
+    z-index: 1000;
+  }
+
+  /* Force elements to be white when menu is open */
+  .navbar.menu-open .hamburger {
+    color: var(--white) !important;
   }
 
   .navbar-links.open {

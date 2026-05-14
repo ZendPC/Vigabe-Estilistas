@@ -44,7 +44,14 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Navegación principal">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${open ? 'menu-open' : ''}`} role="navigation" aria-label="Navegación principal">
+      {/* Overlay para cerrar el menú en móvil al hacer clic fuera */}
+      <div 
+        className={`menu-overlay ${open ? 'active' : ''}`} 
+        onClick={() => setOpen(false)}
+        aria-hidden="true"
+      ></div>
+
       <a href="#hero" className="navbar-logo" onClick={e => handleLink(e, '#hero')} aria-label="Vigabe Estilistas — Inicio">
         <img src="/images/logo.jpg" alt="" aria-hidden="true" />
         <span>Vigabe Estilistas</span>
